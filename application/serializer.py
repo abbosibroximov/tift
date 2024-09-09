@@ -22,7 +22,7 @@ class ApplicationDetailSerializer(serializers.ModelSerializer):
     class Meta:
         model = Application
         fields = ("first_name", "last_name", "passport", "pinfl", "gender", "birth_date",
-                  "direction","status", "district", "accepted_at", "created")
+                  "direction","status", "district", "accepted_at", "created_at")
 
     def get_status(self, obj):
         return obj.get_status_display()

@@ -18,7 +18,8 @@ class NewsContent(models.Model):
             slug = original_slug
             while NewsContent.objects.filter(slug=slug).exists():
                 slug = original_slug
-                slug = f"{slug}-{counter}"
+                if counter != 0:
+                    slug = f"{slug}-{counter}"
                 counter += 1
             self.slug = slug
 

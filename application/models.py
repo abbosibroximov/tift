@@ -2,6 +2,7 @@ from django.db import models
 from django.contrib.auth import get_user_model
 from common.models import District, GenderChoices
 from education.models import Direction
+from datetime import datetime
 
 User = get_user_model()
 
@@ -31,4 +32,5 @@ class Application(models.Model):
 
     def save(self, *args, **kwargs):
         if (self.status == StatusChoices.Accepted or self.status == StatusChoices.Rejected) and not self.accepted_at:
-            return super().save(*args, **kwargs)
+            self.accepted_at = datetime.now()
+        return super().save(*args, **kwargs)
