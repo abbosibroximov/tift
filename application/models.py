@@ -33,4 +33,4 @@ class Application(models.Model):
     def save(self, *args, **kwargs):
         if (self.status == StatusChoices.Accepted or self.status == StatusChoices.Rejected) and not self.accepted_at:
             self.accepted_at = datetime.now()
-            return super().save(*args, **kwargs)
+        return super().save(*args, **kwargs)
