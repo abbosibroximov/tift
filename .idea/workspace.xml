@@ -6,10 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="99abe473-23db-4503-8ea2-eeeefc4628e3" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/application/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/news/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/news/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/news/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/news/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/serializer.py" beforeDir="false" afterPath="$PROJECT_DIR$/application/serializer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/education/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/education/tests.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,5 +82,15 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/application/serializer.py</url>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

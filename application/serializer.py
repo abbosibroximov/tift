@@ -7,12 +7,10 @@ class ApplicationSerializer(serializers.ModelSerializer):
         model = Application
         fields = ("first_name", "last_name", "passport", "pinfl", "gender", "birth_date",
                   "direction", "district")
-
-        def create(self, validated_data):
-            user = self.context['request'].user
-            validated_data['user_id'] = user.id
-            return super().create(validated_data)
-
+    def create(self, validated_data):
+        user = self.context['request'].user
+        validated_data['user_id'] = user.id
+        return super().create(validated_data)
 
 class ApplicationDetailSerializer(serializers.ModelSerializer):
     direction = DirectionModelSerializer
